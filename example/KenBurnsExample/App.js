@@ -9,7 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
-import KenBurnsImage from 'react-native-kenburns-view';
+import KenBurnsView from 'react-native-kenburns-view';
 const Dimensions = require('Dimensions');
 
 type Props = {};
@@ -21,16 +21,19 @@ export default class App extends Component<Props> {
                 Using KenBurns View!
             </Text>
             <View style={styles.imageContainer}>
-                <KenBurnsImage tension={6} friction={50} imageWidth={Dimensions.get('window').width} imageHeight={Dimensions.get('window').height / 100 * 30} sourceUri={require('./images/image1.jpg')} placeholderSource={require('./images/placeholder.jpg')}>
-                </KenBurnsImage>
+                <KenBurnsView tension={6} friction={50} duration={5000}>
+                    <Image source={require('./images/image1.jpg')} />
+                </KenBurnsView>
             </View>
             <View style={styles.imageContainer}>
-                <KenBurnsImage tension={6} friction={50} imageWidth={Dimensions.get('window').width} imageHeight={Dimensions.get('window').height / 100 * 30} sourceUri={require('./images/image2.jpg')} placeholderSource={require('./images/placeholder.jpg')}>
-                </KenBurnsImage>
+            <KenBurnsView tension={6} friction={50} duration={5000}>
+                    <Image source={require('./images/image2.jpg')} />
+                </KenBurnsView>
             </View>
             <View style={styles.imageContainer}>
-                <KenBurnsImage tension={6} friction={50} imageWidth={Dimensions.get('window').width} imageHeight={Dimensions.get('window').height / 100 * 30} sourceUri={require('./images/image3.jpg')} placeholderSource={require('./images/placeholder.jpg')}>
-                </KenBurnsImage>
+            <KenBurnsView tension={6} friction={50} duration={5000}>
+                    <Image source={require('./images/image3.jpg')} />
+                </KenBurnsView>
             </View>
         </View>
     );
@@ -57,6 +60,7 @@ const styles = StyleSheet.create({
     imageContainer: {
         overflow: 'hidden',
         width: Dimensions.get('window').width,
+        flrx: 1,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center'
