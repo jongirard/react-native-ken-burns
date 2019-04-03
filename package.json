@@ -1,5 +1,5 @@
 {
-  "name": "react-native-ken-burns-view",
+  "name": "react-native-ken-burns",
   "version": "4.0.0",
   "description": "KenBurns Image Effect for React Native",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hammadj/react-native-ken-burns-view.git"
+    "url": "git+https://github.com/hammadj/react-native-ken-burns.git"
   },
   "keywords": [
     "react-native",
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/nHiRanZ/react-native-kenburns-view/issues"
   },
-  "homepage": "https://github.com/hammadj/react-native-ken-burns-view",
+  "homepage": "https://github.com/hammadj/react-native-ken-burns",
   "peerDependencies": {
     "react-native": "*"
   },
