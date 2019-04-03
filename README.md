@@ -1,7 +1,6 @@
 # react-native-ken-burns [![npm version](https://badge.fury.io/js/react-native-ken-burns.svg)](https://badge.fury.io/js/react-native-ken-burns)
 
 [`KenBurns`](https://en.wikipedia.org/wiki/Ken_Burns_effect) Ken Burns Effect for React Native.
-Version: 4.0.0
 
 Tested on React Native 0.40+ iOS and Android.
 
