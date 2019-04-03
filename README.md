@@ -8,20 +8,26 @@ Tested on React Native 0.40+ iOS and Android.
 ## Installation
 
 ```bash
-$ npm i react-native-kenburns-view --save
+$ npm i react-native-ken-burns --save
+```
+```bash
+$ yarn add react-native-ken-burns
 ```
 
 ## Demo/Example
 
 ![kenburns view demo](https://media.giphy.com/media/xTcnT8ju8pHKhIZY9G/giphy.gif)
 
-Go to `react-native-kenburns-view/example/KenBurnsExample` to view the example.
+Go to `react-native-ken-burns/example/KenBurnsExample` to view the example.
 
 ## Usage
 
 ```jsx
-<BurnsImage tension={4} friction={50} imageWidth={200} imageHeight={100} sourceUri={require(./images/kenburnsimage.jpg)} placeholderSource={require( './images/placeholder.jpg')}>
-</BurnsImage>
+import KenBurnsView from 'react-native-ken-burns';
+
+<KenBurnsView tension={4} friction={50} duration={5000} min={1.5} max={2.0}>
+  // render any children here, usually Image
+</KenBurnsView>
 ```
 
 ## API (props)
